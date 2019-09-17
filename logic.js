@@ -67,7 +67,7 @@ database.ref(path).on("value", function (snapshot) {
 
     // Change the HTML to reflect the initial values
     $("#highest-bidder").text(initialBidder);
-    $("#highest-price").text(initialBidder);
+    $("#highest-price").text(initialBid);
 
     // Print the data to the console.
     console.log(initialBid);
@@ -97,7 +97,7 @@ $("#submit-bid").on("click", function (event) {
  
   console.log("new bet:" + bidderPrice);
 
-  console.log("old:"+initialBid);
+  console.log("old:"+ initialBid);
   console.log(initialBidder);
 
   //Set condition of a higher bid
